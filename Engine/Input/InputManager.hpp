@@ -1,4 +1,7 @@
-#pragma once
+#ifndef InputManager_hpp
+#define InputManager_hpp
+
+// #pragma once
 
 #include <SFML/Graphics.hpp>
 
@@ -15,3 +18,5 @@ namespace Stha
         sf::Vector2i GetMousePosition(sf::RenderWindow &window);
     };
 } // namespace Stha
+
+#endif

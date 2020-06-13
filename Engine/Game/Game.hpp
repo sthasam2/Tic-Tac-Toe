@@ -1,11 +1,14 @@
-#pragma once
+#ifndef Game_hpp
+#define Game_hpp
+
+// #pragma once
 
 #include <memory>
 #include <string>
 #include <SFML/Graphics.hpp>
 #include "../Assets/AssetManager.hpp"
 #include "../Input/InputManager.hpp"
-#include "../State/StateMachine.hpp"
+#include "../StateMachine/StateMachine.hpp"
 
 namespace Stha
 {
@@ -22,6 +25,7 @@ namespace Stha
 	class Game
 	{
 	public:
+		// Game Window init
 		Game(int width, int height, std::string title);
 
 	private:
@@ -35,3 +39,5 @@ namespace Stha
 	};
 
 } // namespace Stha
+
+#endif

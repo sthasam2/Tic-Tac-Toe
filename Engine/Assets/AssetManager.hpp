@@ -1,4 +1,7 @@
-#pragma once
+#ifndef AssetManager_hpp
+#define AssetManager_hpp
+
+// #pragma once
 
 #include <map>
 #include <SFML/Graphics.hpp>
@@ -25,3 +28,5 @@ namespace Stha
 
 	}; //class AssetManager
 } // namespace Stha
+
+#endif

@@ -1,4 +1,7 @@
-#pragma once
+#ifndef StateMachine_hpp
+#define StateMachine_hpp
+
+// #pragma once
 
 #include <memory>
 #include <stack>
@@ -54,3 +57,5 @@ namespace Stha
 		bool _isReplacing;
 	};
 } // namespace Stha
+
+#endif

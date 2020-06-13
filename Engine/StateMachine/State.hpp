@@ -1,4 +1,6 @@
-#pragma once
+#ifndef State_hpp
+#define State_hpp
+// #pragma once
 
 namespace Stha
 {
@@ -39,3 +41,5 @@ namespace Stha
 		virtual void Resume() {}
 	};
 } // namespace Stha
+
+#endif

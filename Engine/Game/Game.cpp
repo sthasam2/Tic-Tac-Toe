@@ -1,12 +1,13 @@
 #include "Game.hpp"
-
+#include "../../States/SplashState.hpp"
 namespace Stha
 {
 	Game::Game(int width, int height, std::string title)
 	{
 		_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
 
-		//Add a state here
+		// First State - Splash Screen
+		_data->machine.AddState(StateRef(new SplashState(this->_data)));
 
 		this->Run();
 	}
