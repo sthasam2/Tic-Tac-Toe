@@ -1,7 +1,8 @@
 # TicTacToe
 
 [![Version badge](https://img.shields.io/badge/Version-v.0.2-orange.svg)](https://shields.io/)
-A simple tictactoe game built in C++ using SFML library
+
+A simple **Tic-Tac-Toe** game built in **C++** using **SFML Library**
 
 **Current Version: v.0.2**
 
@@ -22,7 +23,7 @@ Currrently tested only on **linux system (Ubuntu 20.04)**
 $ ./compiler.sh
 ```
 
-\*to run the program after compiling
+-   to run the program after compiling
 
 ```shell
 $ run_program
@@ -36,4 +37,5 @@ $ run_program
 ## References
 
 Based on **[Solar Systems- TIC TAC TOE](https://github.com/SonarSystems/Tic-Tac-Toe-SFML-CPP)**
+
 _Tutorial Followed **[Sonar Systems- YouTube](https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO)**_
