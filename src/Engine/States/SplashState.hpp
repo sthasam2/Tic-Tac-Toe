@@ -1,11 +1,11 @@
-#ifndef SplashState_hpp
-#define SplashState_hpp
+// #ifndef SplashState_hpp
+// #define SplashState_hpp
 
-// #pragma once
+#pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../Engine/StateMachine/State.hpp"
-#include "../Engine/Game/Game.hpp"
+#include "../StateMachine/State.hpp"
+#include "../Game/Game.hpp"
 
 namespace Stha
 {
@@ -31,4 +31,4 @@ namespace Stha
 	}; //class  SplashState
 } // namespace Stha
 
-#endif
+// #endif

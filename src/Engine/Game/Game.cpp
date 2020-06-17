@@ -1,14 +1,24 @@
 #include "Game.hpp"
-#include "../../States/SplashState.hpp"
+#include "../States/SplashState.hpp"
+
 namespace Stha
 {
+	/**
+	 * App window manager
+	 * 
+	 * @param width 	- the width of app window
+	 * @param height 	- the height of app window
+	 * @param title 	- the text shown in title bar of app window
+	 */
 	Game::Game(int width, int height, std::string title)
 	{
+		// create window instance using sfml
 		_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
 
 		// First State - Splash Screen
 		_data->machine.AddState(StateRef(new SplashState(this->_data)));
 
+		// App runtime manager
 		this->Run();
 	}
 
@@ -39,7 +49,7 @@ namespace Stha
 				this->_data->machine.GetActiveState()->HandleInput();
 				this->_data->machine.GetActiveState()->Update(dt);
 
-				accumulator = dt;
+				accumulator -= dt;
 			}
 
 			interpolation = accumulator / dt;

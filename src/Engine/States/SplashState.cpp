@@ -1,8 +1,11 @@
+#pragma once
+
 #include <iostream>
 #include <sstream>
 
+#include "../../DEFINITIONS.hpp"
 #include "SplashState.hpp"
-#include "../DEFINITIONS.hpp"
+#include "MainMenuState.hpp"
 
 namespace Stha
 {
@@ -38,8 +41,8 @@ namespace Stha
 	{
 		if (this->_clock.getElapsedTime().asSeconds() > SPLASH_SCREEN_TIMEOUT)
 		{
-			// goto main menu mode
-			std::cout << "Go to main menu\n";
+			// Switch to Main Menu
+			this->_data->machine.AddState(StateRef(new MainMenuState(_data)), true);
 		}
 	}
 

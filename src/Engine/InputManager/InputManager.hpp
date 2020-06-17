@@ -1,7 +1,7 @@
-#ifndef InputManager_hpp
-#define InputManager_hpp
+// #ifndef InputManager_hpp
+// #define InputManager_hpp
 
-// #pragma once
+#pragma once
 
 #include <SFML/Graphics.hpp>
 
@@ -19,4 +19,4 @@ namespace Stha
     };
 } // namespace Stha
 
-#endif
+// #endif
