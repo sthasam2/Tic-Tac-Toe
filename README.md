@@ -8,9 +8,9 @@ A simple **Tic-Tac-Toe** game built in **C++** using **SFML Library**
 
 ## Changelog
 
-v.0.3 Added a Main Menu State
-v.0.2 Added a Splash Screen State
-v.0.1 Created Game Engine
+-   v.0.3 Added a Main Menu State
+-   v.0.2 Added a Splash Screen State
+-   v.0.1 Created Game Engine
 
 ## System Requirements
 
