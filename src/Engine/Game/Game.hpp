@@ -3,6 +3,7 @@
 #include <memory>
 #include <string>
 #include <SFML/Graphics.hpp>
+#include "../../DEFINITIONS.hpp"
 #include "../StateMachine/StateMachine.hpp"
 #include "../AssetManager/AssetManager.hpp"
 #include "../InputManager/InputManager.hpp"
@@ -33,7 +34,7 @@ namespace Stha
 
 	private:
 		// Delta Time: Frame Rate Updater capped @60hz
-		const float dt = 1.0f / 60.0f;
+		const float dt = FPS;
 
 		sf::Clock _clock;
 

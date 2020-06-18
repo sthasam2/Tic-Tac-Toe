@@ -4,6 +4,7 @@
 #include <sstream>
 
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
 #include "../../DEFINITIONS.hpp"
 
 namespace Stha
@@ -37,10 +38,10 @@ namespace Stha
 		// Position Coordinates
 		// Play Button
 		float playX = ((SCREEN_WIDTH / 2) - (this->_playButton.getGlobalBounds().width / 2));
-		float playY = ((SCREEN_HEIGHT / 2) - (this->_playButton.getGlobalBounds().height / 2));
+		float playY = ((SCREEN_HEIGHT / 3 * 2) - (this->_playButton.getGlobalBounds().height / 2));
 		// Play Button Outer
 		float playOuterX = ((SCREEN_WIDTH / 2) - (this->_playButtonOuter.getGlobalBounds().width / 2));
-		float playOuterY = ((SCREEN_HEIGHT / 2) - (this->_playButtonOuter.getGlobalBounds().height / 2));
+		float playOuterY = ((SCREEN_HEIGHT / 3 * 2) - (this->_playButtonOuter.getGlobalBounds().height / 2));
 		// Title
 		float titleX = ((SCREEN_WIDTH / 2) - (this->_title.getGlobalBounds().width / 2));
 		float titleY = (this->_title.getGlobalBounds().height * 0.1);
@@ -69,8 +70,8 @@ namespace Stha
 			// Play Button
 			if (this->_data->input.IsSpriteClicked(this->_playButton, sf::Mouse::Left, this->_data->window))
 			{
-				//Game Screen
-				std::cout << "Go to Game Screen\n";
+				// Switch to Game Screen
+				this->_data->machine.AddState(StateRef(new GameState(_data)), true);
 			}
 		}
 	}
@@ -86,10 +87,10 @@ namespace Stha
 	}
 
 	/**
-		 * Draw all assets and states on screen
-		 * 
-		 * @param : float dt
-		*/
+	 * Draw all assets and states on screen
+	 * 
+	 * @param : float dt
+	*/
 	void MainMenuState::Draw(float dt)
 	{
 		// clear existing window
