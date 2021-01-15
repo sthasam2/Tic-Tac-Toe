@@ -3,8 +3,8 @@
 
 // GAME WINDOW
 #define APP_NAME "Tic-Tac-Toe"
-#define SCREEN_WIDTH 480
-#define SCREEN_HEIGHT 680
+#define SCREEN_WIDTH 768
+#define SCREEN_HEIGHT 1136
 #define FPS 1.0f / 10.0f
 
 // SPLASH STATE
@@ -20,6 +20,7 @@
 // GAME STATE
 #define GAME_BACKGROUND_FILEPATH "assets/res/Main Menu Background.png"
 #define PAUSE_BUTTON "assets/res/Pause Button.png"
+#define GRID_SPRITE_FILEPATH "assets/res/Grid.png"
 
 // PAUSE STATE
 #define PAUSE_BACKGROUND_FILEPATH "assets/res/Main Menu Background.png"
@@ -41,10 +42,10 @@
 #define PLAYER_PIECE X_PIECE
 #define AI_PIECE O_PIECE
 
-#define STATE_PLAYING 98
-#define STATE_PAUSED 97
-#define STATE_WON 96
-#define STATE_LOSE 95
+#define STATE_PLAYING 974
+#define STATE_PAUSED 940
+#define STATE_WON 777
+#define STATE_LOSE 1053
 #define STATE_PLACING_PIECE 94
-#define STATE_AI_PLAYING 93
-#define STATE_DRAW 92
+#define STATE_AI_PLAYING 41
+#define STATE_DRAW 1274

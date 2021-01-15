@@ -29,7 +29,7 @@ namespace Stha
 	}
 
 	// gets mouse position
-	sf::Vector2i GetMousePosition(sf::RenderWindow &window)
+	sf::Vector2i InputManager::GetMousePosition(sf::RenderWindow &window)
 	{
 		return sf::Mouse::getPosition(window);
 	}
