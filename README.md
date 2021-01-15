@@ -13,27 +13,59 @@ A simple **Tic-Tac-Toe** game built in **C++** using **SFML Library**
 -   v.0.2 Added a Splash Screen State
 -   v.0.1 Created Game Engine
 
+  
+  
 ## System Requirements
 
 Currrently tested only on **linux system (Ubuntu 20.04)**
 
+  
+  
 ## Usage
 
-### Pre-built
+### **Pre-built**
 
--   to run directly from the binary
+-   to run directly from the binary (if available)
 
-    `$ ./bin/main`
+    ``` BASH
+    ./bin/main
+    ```
 
-### Rebuild
+### **Rebuild**
 
--   run bash script to compile the program
+1. ### **Setup Scripts**  
 
-    `$ ./compiler.sh`
+    Rebuilding requires the execution of scripts. To make the bash scripts executable please copy the following commands to your bash terminal  
 
--   to run the program after compiling
+    ``` BASH
+    chmod +x compiler.sh
+    chmod +x setup.sh
+    chmod +x run.sh
+    ```
 
-    `$ ./bin/main`
+2.  ### **Setup Dependencies**  
+
+    You only need to setup dependencies once. Please execute the following script to install dependencies.  
+
+    ``` BASH
+    ./setup.sh
+    ```
+
+3. ### **Compile the program**  
+
+    Run bash script to compile the program.
+
+    ``` BASH
+    ./compiler.sh
+    ```
+
+4. ### **Launch application**
+
+    To run the program after compiling, execute:  
+
+    ``` BASH
+    ./run.sh
+    ```
 
 ## Depedencies
 

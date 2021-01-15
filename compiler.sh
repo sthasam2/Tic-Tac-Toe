@@ -4,7 +4,7 @@ ALL="src/main.cpp src/DEFINITIONS.hpp src/Engine/AI/AI.hpp src/Engine/AssetManag
 printf "\nBuilding Project...\n"
 g++ $ALL -o bin/main
 
-alias run = ./bin/main
+# alias run=./bin/main
 # printf "\nTYPE command 'run_program' to run the program.\n\n"
-printf "\nIf no ERRORs detected, Project built succesfully!\n\nType command './bin/main' to run program\n"
+printf "\nIf no ERRORs detected, Project built succesfully!\n\nType command './run' to run program\n"
 
