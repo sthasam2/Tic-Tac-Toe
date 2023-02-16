@@ -4,28 +4,29 @@
 
 A simple **Tic-Tac-Toe** game built in **C++** using **SFML Library**
 
-**Current Version: v.0.4**
+## Screenshots
+
+![alt](docs/screenshots/0.jpg)
+![alt](docs/screenshots/1.jpg)
+![alt](docs/screenshots/2.jpg)
+![alt](docs/screenshots/3.jpg)
 
 ## Changelog
 
--   v.0.4 Added all required States : Game, Pause, Gameover States
--   v.0.3 Added a Main Menu State
--   v.0.2 Added a Splash Screen State
--   v.0.1 Created Game Engine
+- v.0.4 Added all required States : Game, Pause, Gameover States
+- v.0.3 Added a Main Menu State
+- v.0.2 Added a Splash Screen State
+- v.0.1 Created Game Engine
 
-  
-  
 ## System Requirements
 
 Currrently tested only on **linux system (Ubuntu 20.04)**
 
-  
-  
 ## Usage
 
 ### **Pre-built**
 
--   to run directly from the binary (if available)
+- to run directly from the binary (if available)
 
     ``` BASH
     ./bin/main
@@ -38,17 +39,15 @@ Currrently tested only on **linux system (Ubuntu 20.04)**
     Rebuilding requires the execution of scripts. To make the bash scripts executable please copy the following commands to your bash terminal  
 
     ``` BASH
-    chmod +x compiler.sh
-    chmod +x setup.sh
-    chmod +x run.sh
+    chmod +x scripts/*.sh
     ```
 
-2.  ### **Setup Dependencies**  
+2. ### **Setup Dependencies**  
 
     You only need to setup dependencies once. Please execute the following script to install dependencies.  
 
     ``` BASH
-    ./setup.sh
+    ./scripts/setup.sh
     ```
 
 3. ### **Compile the program**  
@@ -56,7 +55,7 @@ Currrently tested only on **linux system (Ubuntu 20.04)**
     Run bash script to compile the program.
 
     ``` BASH
-    ./compiler.sh
+    ./scripts/compiler.sh
     ```
 
 4. ### **Launch application**
@@ -64,15 +63,15 @@ Currrently tested only on **linux system (Ubuntu 20.04)**
     To run the program after compiling, execute:  
 
     ``` BASH
-    ./run.sh
+    ./scripts/run.sh
     ```
 
 ## Depedencies
 
--   C++ compiler
--   SFML library
+- C++ compiler
+- SFML library
 
 ## References
 
--   Based on: **[Solar Systems- TIC TAC TOE](https://github.com/SonarSystems/Tic-Tac-Toe-SFML-CPP)**
--   Tutorial Followed: **[Sonar Systems- YouTube](https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO)**
+- Based on: **[Solar Systems- TIC TAC TOE](https://github.com/SonarSystems/Tic-Tac-Toe-SFML-CPP)**
+- Tutorial Followed: **[Sonar Systems- YouTube](https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO)**
